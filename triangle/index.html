@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三角形</title>
+
+  <style type="text/css">
+    .mb20 {
+      margin-bottom: 20px;
+    }
+    .ml20 {
+      margin-left: 20px;
+    }
+    .fl {
+      float: left;
+    }
+    .t1 {
+      width: 0;
+      border-top: 50px solid yellowgreen;
+      border-bottom: 50px solid salmon;
+      border-left: 50px solid slateblue;
+      border-right: 50px solid skyblue;
+    }
+    .t1.top {
+      border-bottom: 50px solid transparent;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+    }
+    .t1.bottom {
+      border-top: 50px solid transparent;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+    }
+    .t1.left {
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-right: 50px solid transparent;
+    }
+    .t1.right {
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 50px solid transparent;
+    }
+
+    .t2 {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(45deg, yellowgreen, yellowgreen 50%, skyblue, skyblue 50%);
+    }
+    .t2.top {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(45deg, yellowgreen, yellowgreen 50%, transparent, transparent 50%);
+      transform: rotate(135deg);
+    }
+    .t2.bottom {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(45deg, skyblue, skyblue 50%, transparent, transparent 50%);
+      transform: rotate(-45deg);
+    }
+
+    .t3 {
+      width: 200px;
+      height: 100px;
+      background: conic-gradient(from 90deg at 50% 0, skyblue, skyblue 45deg,  transparent, transparent 45.1deg);
+    }
+
+    .t4 {
+      width: 141px;
+      height: 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    .t4::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: chocolate;
+      transform-origin: left bottom;
+      transform: rotate(45deg);
+    }
+
+    .t5 {
+      width: 100px;
+      height: 100px;
+      margin-left: 20px;
+      margin-top: 20px;
+      background: cornflowerblue;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="t1 mb20"></div>
+
+  <div class="mb20">
+    <div class="t1 fl top"></div>
+    <div class="t1 ml20 fl bottom"></div>
+    <div class="t1 ml20 fl left"></div>
+    <div class="t1 ml20 fl right"></div>
+  </div> -->
+
+  <!-- <div class="t2 mb20"></div>
+
+  <div class="mb20">
+    <div class="t2 fl top"></div>
+    <div class="t2 ml20 fl bottom"></div>
+  </div> -->
+
+  <!-- <div class="t3 mb20"></div> -->
+
+  <!-- <div class="t4 mb20"></div> -->
+
+  <div class="t5 mb20"></div>
+</body>
+</html>
